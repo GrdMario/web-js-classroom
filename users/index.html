@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./users.css">
+</head>
+
+<body>
+
+    <div class="header__container">
+        <ul class="navigation">
+            <li class="navigation__item">
+                <a href="../index.html">
+                    Home
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a href="">
+                    Users
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a href="../cars/index.html">
+                    Cars
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="body__container">
+        <div class="users">
+            <div class="filter">
+                <div class="filter__item">
+                    <label for="firstName" class="filter__label">First name</label>
+                    <input id="firstName" class="filter__input" type="text" placeholder="First Name" />
+                </div>
+
+                <div class="filter__item">
+                    <label for="lastName" class="filter__label">Last name</label>
+                    <input id="lastName" class="filter__input" type="text" placeholder="Last Name" />
+                </div>
+
+                <div class="filter__item">
+                    <label for="email" class="filter__label">Email</label>
+                    <input id="email" class="filter__input" type="text" placeholder="Email" />
+                </div>
+
+                <div class="filter__item">
+                    <label for="isActive" class="filter__label">Is Active</label>
+                    <select id="isActive" class="filter__input">
+                        <option value="true">Active</option>
+                        <option value="false">Inactive</option>
+                    </select>
+                </div>
+
+                <button onclick="onSearch()">Search</button>
+            </div>
+
+            <div id="users" class="table">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./users.js"></script>
+
+</html>
